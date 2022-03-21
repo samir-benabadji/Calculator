@@ -1,5 +1,5 @@
 # Calculator
 
-| Home | Job Menu |
+| Home | Actions History |
 |--|--|
-| ![Home](assets/images/Screenshot_1647798524.png) | ![Job Menu](assets/images/Screenshot_1647798548.png) |
+| ![Home](assets/Screenshot1.png) | ![Job Menu](assets/Screenshot2.png) |
