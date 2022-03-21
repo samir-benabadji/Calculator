@@ -32,7 +32,7 @@ class History extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .caption
-                    ?.copyWith(fontSize: 12.0),
+                    ?.copyWith(fontSize: 12.0, color: Color(0xff044404)),
               ),
             )
           : ListView.separated(
@@ -46,8 +46,12 @@ class History extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   tileColor: buttonsBackgroundColor,
-                  title: Text(result[i].title),
-                  subtitle: Text(result[i].subtitle),
+                  title: Text(
+                    result[i].title,
+                    style: TextStyle(color: Color.fromARGB(255, 9, 119, 9)),
+                  ),
+                  subtitle: Text(result[i].subtitle,
+                      style: TextStyle(color: Color(0xff044404))),
                 );
               },
             ),

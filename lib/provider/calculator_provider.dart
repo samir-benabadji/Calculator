@@ -37,7 +37,7 @@ class CalculatorProvider with ChangeNotifier {
           ..title = result
           ..subtitle = equation;
         Hive.box<HistoryItem>('history').add(historyItem);
-        showToast(context, 'Saved');
+        showToast(context, 'Saved',);
       } else {
         equation = equation + sign;
       }

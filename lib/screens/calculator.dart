@@ -40,7 +40,10 @@ class Calculator extends StatelessWidget {
                       Consumer<CalculatorProvider>(
                         builder: (context, equation, child) => Text(
                           equation.equation,
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context)
+                              .textTheme
+                              .caption!
+                              .copyWith(color: Color.fromARGB(255, 6, 92, 6)),
                         ),
                       ),
                     ],
@@ -48,10 +51,11 @@ class Calculator extends StatelessWidget {
                 ),
                 SizedBox(height: 10.0),
                 Consumer<CalculatorProvider>(
-                  builder: (context, equation, child) => Text(
-                    equation.result,
-                    style: Theme.of(context).textTheme.headline3,
-                  ),
+                  builder: (context, equation, child) => Text(equation.result,
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline3!
+                          .copyWith(color: Color(0xff044404))),
                 ),
               ],
             ),

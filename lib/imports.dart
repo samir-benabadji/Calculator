@@ -14,14 +14,22 @@ AppBar appbar(
   Function() tap,
 ) {
   return AppBar(
+    iconTheme: IconThemeData(color: Color(0xff044404)),
+    backgroundColor: Color(0xFF090E1C),
     title: Text(
       title,
-      style: TextStyle(fontWeight: FontWeight.w400),
+      style: TextStyle(
+          fontSize: 20,
+          color: Color.fromARGB(255, 5, 85, 5),
+          fontWeight: FontWeight.w400),
     ),
     actions: [
       IconButton(
         onPressed: tap,
-        icon: Icon(icon),
+        icon: Icon(
+          icon,
+          color: Color(0xff044404),
+        ),
       ),
     ],
   );
@@ -86,8 +94,12 @@ void showToast(BuildContext context, String message) {
   final scaffold = ScaffoldMessenger.of(context);
   scaffold.showSnackBar(
     SnackBar(
-      content: Text(message),
+      content: Text(
+        message,
+        style: TextStyle(color: Colors.white),
+      ),
       duration: Duration(milliseconds: 400),
+      backgroundColor: Color(0xff044404),
     ),
   );
 }
