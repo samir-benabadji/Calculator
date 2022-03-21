@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
 const buttonsBackgroundColor = Color(0xFF090E1C);
-const backgroundColor = Color(0xff044404);
+const backgroundColor = Colors.white12;
 const yellowColor = Color(0xff044404);
 const whiteColor = Color.fromARGB(255, 25, 134, 25);
 
