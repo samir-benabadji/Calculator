@@ -32,6 +32,14 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.9.2"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/Calculator2Logo.png"
+  adaptive_icon_background: "#241e20"
+  adaptive_icon_foreground: "assets/Calculator2Logo.png"
   build_runner: ^2.0.5
   hive_generator: ^1.1.0
 
